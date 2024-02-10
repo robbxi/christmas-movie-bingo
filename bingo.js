@@ -26,5 +26,7 @@ async function generateCard(){
         }
         unique.push(number);
         card[i].innerHTML = cliches[number];
+        card[i].classList.remove("marked");
     }
 }
+generateCard();

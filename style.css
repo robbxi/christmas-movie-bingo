@@ -40,10 +40,12 @@ table tr td{
     background: linear-gradient(#ffff,#ff0000);
 
 }
+@media only screen and (min-width: 620px){
 
 table tr td:hover{
     background: #cacaca;
     cursor: pointer;
+}
 }
 #undertable{
     display: flex;
@@ -80,6 +82,10 @@ table tr td:hover{
         display: flex;
         margin-left: -10px;
     }
+    table tr td:hover{
+        
+    }
+    
     
 
 }
