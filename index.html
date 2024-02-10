@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Bingo Card Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/logo.png">
+            <img src="images/logo-1.png" alt="Bingo" id="logo">
+        </picture>
+    </header>
+    <div class="container">
+        <div id="card">
+            <table>
+                <tr>
+                        <td id="cellb1" onclick="markCell(id)"></td>
+                        <td id="celli1" onclick="markCell('celli1')"></td>
+                        <td id="celln1" onclick="markCell('celln1')"></td>
+                        <td id="cellg1" onclick="markCell('cellg1')"></td>
+                        <td id="cello1" onclick="markCell('cello1')"></td>
+                    </tr>
+                    <tr>
+                        <td id="cellb2" onclick="markCell('cellb2')"></td>
+                        <td id="celli2" onclick="markCell('celli2')"></td>
+                        <td id="celln2" onclick="markCell('celln2')"></td>
+                        <td id="cellg2" onclick="markCell('cellg2')"></td>
+                        <td id="cello2" onclick="markCell('cello2')"></td>
+                    </tr>
+                    <tr>
+                        <td id="cellb3" onclick="markCell('cellb3')"></td>
+                        <td id="celli3" onclick="markCell('celli3')"></td>
+                        <td id="celln3" onclick="markCell('celln3')"></td>
+                        <td id="cellg3" onclick="markCell('cellg3')"></td>
+                        <td id="cello3" onclick="markCell('cello3')"></td>
+                    </tr>
+                    <tr>
+                        <td id="cellb4" onclick="markCell('cellb4')"></td>
+                        <td id="celli4" onclick="markCell('celli4')"></td>
+                        <td id="celln4" onclick="markCell('celln4')"></td>
+                        <td id="cellg4" onclick="markCell('cellg4')"></td>
+                        <td id="cello4" onclick="markCell('cello4')"></td>
+                    </tr>
+                    <tr>
+                        <td id="cellb5" onclick="markCell('cellb5')"></td>
+                        <td id="celli5" onclick="markCell('celli5')"></td>
+                        <td id="celln5" onclick="markCell('celln5')"></td>
+                        <td id="cellg5" onclick="markCell('cellg5')"></td>
+                        <td id="cello5" onclick="markCell('cello5')"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="undertable">
+            <button id="generate" onclick="generateCard()">Generate</button>
+        </div>
+    
+    </div> 
+    <script src="bingo.js"></script>
+</html>

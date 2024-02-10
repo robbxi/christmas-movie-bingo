@@ -1,0 +1,87 @@
+*{
+    font-family: 'Titan One', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+header img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url("images/tree.jpg");
+    font-family: 'Titan One', sans-serif;
+    
+}
+#card{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+table tr td{
+    border: 1px solid black;
+    width: 110px;
+    height: 110px;
+    padding: 0px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    
+    
+}
+.marked{
+    background: linear-gradient(#ffff,#ff0000);
+
+}
+
+table tr td:hover{
+    background: #cacaca;
+    cursor: pointer;
+}
+#undertable{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+#generate{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 20px 50px;
+    border-radius: 9px;
+    background: green;
+    font-size: 30px;
+    color: white;
+    transition: background .3s;
+    border: none;
+    
+}
+#generate:hover{
+    background: #0D5901;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    table tr td{
+        font-size: 11px;
+        width: 80px;
+        height: 80px;
+    }
+    table{
+        display: flex;
+        margin-left: -10px;
+    }
+    header img{
+    }
+    
+
+}
